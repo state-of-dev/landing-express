@@ -45,7 +45,7 @@ export function Navbar() {
       >
         <nav className="flex items-center justify-between px-6 py-4 md:px-12 md:py-5" aria-label="Principal">
           <button onClick={() => scrollToSection("#inicio")} className="group flex items-center gap-2">
-            <span className="font-mono text-xs tracking-widest text-muted-foreground">LANDING EXPRESS</span>
+            <span className="font-mono text-xs tracking-widest text-muted-foreground">HARDCODED STUDIO</span>
             <span className="h-1.5 w-1.5 rounded-full bg-accent transition-transform duration-300 group-hover:scale-150" />
           </button>
 

@@ -66,27 +66,65 @@ export async function POST(request: NextRequest) {
     }
 
     await transporter.sendMail({
-      from: `Landing Express <${gmailUser}>`,
+      from: `Hardcoded Studio <${gmailUser}>`,
       to: contactEmail,
       replyTo: email,
-      subject: `Nueva solicitud de Landing Express — ${nombre}`,
+      subject: `Nueva solicitud de Hardcoded Studio | ${nombre.toUpperCase()}`,
       html: `
-        <div style="font-family: Arial, sans-serif; max-width: 640px; margin: 0 auto; color: #171717;">
-          <h2 style="color: #2563eb;">Nueva solicitud de Landing Express</h2>
-          <p><strong>Producto:</strong> ${product.name}</p>
-          <p><strong>Precio:</strong> ${product.priceLabel}, ${product.taxLabel}</p>
-          <div style="background: #f5f5f5; padding: 20px; margin: 24px 0;">
-            <p><strong>Nombre:</strong> ${safe.nombre}</p>
-            <p><strong>Correo:</strong> ${safe.email}</p>
-            ${safe.telefono ? `<p><strong>Teléfono:</strong> ${safe.telefono}</p>` : ""}
-            <p><strong>Negocio:</strong> ${safe.negocio}</p>
-          </div>
-          <h3>Oferta que quiere promocionar</h3>
-          <p style="white-space: pre-wrap;">${safe.mensaje}</p>
-        </div>
+        <div style="display:none;max-height:0;overflow:hidden;opacity:0;color:transparent;">Nueva solicitud de ${safe.nombre} para Hardcoded Studio.</div>
+        <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="width:100%;background:#f3f4f6;font-family:Arial,Helvetica,sans-serif;color:#171717;">
+          <tr>
+            <td align="center" style="padding:32px 12px;">
+              <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="width:100%;max-width:640px;background:#ffffff;border-collapse:collapse;">
+                <tr>
+                  <td style="background:#050505;padding:36px 40px 32px;border-top:4px solid #1d4ed8;">
+                    <h1 style="margin:0;color:#ffffff;font-size:30px;font-weight:400;line-height:1.15;letter-spacing:-0.8px;">Un nuevo proyecto para<br><span style="color:#8ca7ff;font-style:italic;">Hardcoded Studio</span></h1>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="padding:34px 40px 8px;">
+                    <p style="margin:0 0 18px;color:#6b7280;font-size:10px;font-weight:700;line-height:1.4;letter-spacing:2px;text-transform:uppercase;">Contacto</p>
+                    <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="width:100%;border-collapse:collapse;">
+                      <tr>
+                        <td style="width:105px;padding:10px 0;border-bottom:1px solid #eeeeee;color:#9ca3af;font-size:12px;vertical-align:top;">Nombre</td>
+                        <td style="padding:10px 0;border-bottom:1px solid #eeeeee;color:#171717;font-size:14px;font-weight:700;vertical-align:top;">${safe.nombre}</td>
+                      </tr>
+                      <tr>
+                        <td style="width:105px;padding:10px 0;border-bottom:1px solid #eeeeee;color:#9ca3af;font-size:12px;vertical-align:top;">Correo</td>
+                        <td style="padding:10px 0;border-bottom:1px solid #eeeeee;font-size:14px;vertical-align:top;"><a href="mailto:${safe.email}" style="color:#1d4ed8;text-decoration:none;">${safe.email}</a></td>
+                      </tr>
+                      ${safe.telefono ? `<tr><td style="width:105px;padding:10px 0;border-bottom:1px solid #eeeeee;color:#9ca3af;font-size:12px;vertical-align:top;">Teléfono</td><td style="padding:10px 0;border-bottom:1px solid #eeeeee;color:#171717;font-size:14px;vertical-align:top;">${safe.telefono}</td></tr>` : ""}
+                      <tr>
+                        <td style="width:105px;padding:10px 0;color:#9ca3af;font-size:12px;vertical-align:top;">Negocio</td>
+                        <td style="padding:10px 0;color:#171717;font-size:14px;vertical-align:top;">${safe.negocio}</td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="padding:28px 40px 0;">
+                    <p style="margin:0 0 12px;color:#6b7280;font-size:10px;font-weight:700;line-height:1.4;letter-spacing:2px;text-transform:uppercase;">Acerca del negocio</p>
+                    <div style="border-left:3px solid #1d4ed8;background:#f8fafc;padding:20px 22px;color:#374151;font-size:14px;line-height:1.75;white-space:pre-wrap;">${safe.mensaje}</div>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="padding:32px 40px 40px;">
+                    <table role="presentation" cellspacing="0" cellpadding="0" border="0">
+                      <tr>
+                        <td style="background:#1d4ed8;border-radius:999px;">
+                          <a href="mailto:${safe.email}" style="display:inline-block;padding:14px 24px;color:#ffffff;font-size:11px;font-weight:700;line-height:1;letter-spacing:1.4px;text-decoration:none;text-transform:uppercase;">Responder a ${safe.nombre}</a>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
       `,
       text: [
-        "Nueva solicitud de Landing Express",
+        "Nueva solicitud de Hardcoded Studio",
         `Precio: ${product.priceLabel}, ${product.taxLabel}`,
         `Nombre: ${nombre}`,
         `Correo: ${email}`,

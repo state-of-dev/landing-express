@@ -15,18 +15,23 @@ const geistMono = Geist_Mono({
 })
 
 export const metadata: Metadata = {
-  title: "Landing Express | Landing profesional por $4,500 MXN",
+  title: "Landing Express por Hardcoded Studio | $4,500 MXN",
   description:
-    "Landing profesional de hasta 7 secciones, responsive, con SEO técnico básico, publicación y una ronda de ajustes. Entrega en 5 días hábiles. $4,500 MXN, IVA incluido.",
-  applicationName: "Landing Express",
-  authors: [{ name: "Landing Express" }],
-  creator: "Landing Express",
-  publisher: "Landing Express",
+    "Landing profesional para negocios: hasta 7 secciones, diseño responsive, SEO técnico, publicación y entrega en 5 días hábiles. $4,500 MXN con IVA.",
+  applicationName: "Hardcoded Studio",
+  authors: [{ name: "Hardcoded Studio" }],
+  creator: "Hardcoded Studio",
+  publisher: "Hardcoded Studio",
+  category: "Diseño y desarrollo web",
   keywords: [
     "landing page",
+    "landing page México",
     "diseño de landing page",
     "landing profesional",
     "página web para negocios",
+    "desarrollo web CDMX",
+    "Hardcoded Studio",
+    "Landing Express",
     "México",
   ],
   robots: {
@@ -39,16 +44,16 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Landing Express | Landing profesional por $4,500 MXN",
-    description: "Una landing responsive, publicada y lista para presentar tu oferta. IVA incluido.",
-    siteName: "Landing Express",
+    title: "Landing Express por Hardcoded Studio | $4,500 MXN",
+    description: "Una landing profesional, responsive y publicada para presentar tu oferta. Entrega en 5 días hábiles e IVA incluido.",
+    siteName: "Hardcoded Studio",
     locale: "es_MX",
     type: "website",
   },
   twitter: {
-    card: "summary",
-    title: "Landing Express | $4,500 MXN",
-    description: "Landing profesional de hasta 7 secciones. IVA incluido.",
+    card: "summary_large_image",
+    title: "Landing Express por Hardcoded Studio | $4,500 MXN",
+    description: "Landing profesional, responsive y publicada en 5 días hábiles. IVA incluido.",
   },
   icons: {
     icon: [{ url: "/favicon.svg", type: "image/svg+xml" }],
@@ -67,8 +72,9 @@ const jsonLd = {
     "Landing profesional de hasta 7 secciones, responsive, con SEO técnico básico, publicación y una ronda de ajustes.",
   provider: {
     "@type": "Organization",
-    name: "Landing Express",
+    name: "Hardcoded Studio",
   },
+  serviceType: "Diseño y desarrollo de landing page",
   areaServed: {
     "@type": "Country",
     name: "México",
