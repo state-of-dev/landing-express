@@ -1,0 +1,14 @@
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <clipPath id="icon-shape">
+      <rect width="32" height="32" rx="6"/>
+    </clipPath>
+  </defs>
+  <g clip-path="url(#icon-shape)">
+    <rect width="32" height="32" fill="#050505"/>
+    <path d="M18 0H32V32H10L18 0Z" fill="#1D4ED8"/>
+  </g>
+  <path d="M9 8V24H18" stroke="#FAFAFA" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M22 8H14V24H22" stroke="#FAFAFA" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M14 16H20" stroke="#FAFAFA" stroke-width="2.5" stroke-linecap="round"/>
+</svg>
