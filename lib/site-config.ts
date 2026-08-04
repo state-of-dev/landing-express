@@ -19,7 +19,7 @@ export const demos = [
   },
   {
     title: "Norte Arquitectos",
-    category: "Landing para arquitectura",
+    category: "Landing para inmobiliaria",
     href: process.env.NEXT_PUBLIC_NORTE_DEMO_URL ?? "",
     image: "https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=1400&q=85",
     position: "center",
