@@ -75,7 +75,7 @@ export function Contact() {
               className="text-center font-sans text-4xl font-light tracking-tight md:text-6xl lg:text-8xl"
               animate={{ color: isHovered ? "#050505" : "#fafafa" }}
             >
-              Inicia tu <span className="italic">Landing Express</span>
+              Inicia tu <span className="italic">Landing</span>
             </motion.h2>
             <motion.div animate={{ rotate: isHovered ? 135 : 0, color: isHovered ? "#050505" : "#fafafa" }}>
               <ArrowUpRight className="h-12 w-12 md:h-16 md:w-16" />

@@ -79,7 +79,7 @@ export function Hero() {
               whileTap={{ scale: 0.95 }}
               className="w-full rounded-full border border-white/20 bg-transparent px-7 py-4 font-mono text-xs uppercase tracking-widest backdrop-blur-sm transition-colors duration-500 hover:bg-white hover:text-black md:w-auto md:px-9 md:text-sm"
             >
-              Quiero mi Landing Express
+              Quiero mi Landing
             </motion.button>
           </div>
         </motion.div>
@@ -92,7 +92,7 @@ export function Hero() {
         >
           <p className="mb-2 font-mono text-xs tracking-[0.3em] text-muted-foreground">PRECIO FINAL · IVA INCLUIDO</p>
           <h2 className="text-balance font-sans text-4xl font-light tracking-tight md:text-6xl lg:text-7xl">
-            $4,500
+            $5,800
             <br />
             <span className="italic">MXN</span>
           </h2>

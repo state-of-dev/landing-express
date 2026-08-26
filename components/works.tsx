@@ -8,7 +8,7 @@ const included = [
   "Diseño responsive para celular y escritorio",
   "CTA al WhatsApp de tu negocio",
   "Una ronda consolidada de ajustes",
-  "Entrega en 5 días hábiles a partir anticipo y materiales",
+  "Entrega en 7 días hábiles",
 ]
 
 const extras = [

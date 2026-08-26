@@ -42,7 +42,7 @@ export default function OpenGraphImage() {
       </div>
       <div style={{ alignItems: "center", display: "flex", fontFamily: "monospace", fontSize: 26, justifyContent: "space-between", letterSpacing: 2 }}>
         <span style={{ color: "#a3a3a3" }}>LANDING EXPRESS</span>
-        <span>$4,500 MXN · IVA incluido</span>
+        <span>$5,800 MXN · IVA incluido</span>
       </div>
     </div>,
     size,

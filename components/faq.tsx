@@ -1,6 +1,6 @@
 const questions = [
   {
-    question: "¿Cuándo comienzan los cinco días hábiles?",
+    question: "¿Cuándo comienzan los siete días hábiles?",
     answer: "Cuando recibimos el anticipo y todos los textos, imágenes, logo y datos necesarios para construir la página.",
   },
   {
@@ -21,7 +21,7 @@ const questions = [
   },
   {
     question: "¿Cómo se realiza el pago?",
-    answer: "Se solicita un anticipo del 50% para iniciar. El precio total de Landing Express es $4,500 MXN, IVA incluido.",
+    answer: "Se solicita un anticipo del 50% para iniciar. El precio total de Landing Express es $5,800 MXN, IVA incluido.",
   },
 ]
 

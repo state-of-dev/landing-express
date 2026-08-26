@@ -15,9 +15,9 @@ const geistMono = Geist_Mono({
 })
 
 export const metadata: Metadata = {
-  title: "Landing Express por Hardcoded Studio | $4,500 MXN",
+  title: "Landing Express por Hardcoded Studio | $5,800 MXN",
   description:
-    "Landing profesional para negocios: hasta 7 secciones, diseño responsive, SEO técnico, publicación y entrega en 5 días hábiles. $4,500 MXN con IVA.",
+    "Landing profesional para negocios: hasta 7 secciones, diseño responsive, SEO técnico, publicación y entrega en 7 días hábiles. $5,800 MXN con IVA.",
   applicationName: "Hardcoded Studio",
   authors: [{ name: "Hardcoded Studio" }],
   creator: "Hardcoded Studio",
@@ -44,16 +44,16 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Landing Express por Hardcoded Studio | $4,500 MXN",
-    description: "Una landing profesional, responsive y publicada para presentar tu oferta. Entrega en 5 días hábiles e IVA incluido.",
+    title: "Landing Express por Hardcoded Studio | $5,800 MXN",
+    description: "Una landing profesional, responsive y publicada para presentar tu oferta. Entrega en 7 días hábiles e IVA incluido.",
     siteName: "Hardcoded Studio",
     locale: "es_MX",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Landing Express por Hardcoded Studio | $4,500 MXN",
-    description: "Landing profesional, responsive y publicada en 5 días hábiles. IVA incluido.",
+    title: "Landing Express por Hardcoded Studio | $5,800 MXN",
+    description: "Landing profesional, responsive y publicada en 7 días hábiles. IVA incluido.",
   },
   icons: {
     icon: [{ url: "/favicon.svg", type: "image/svg+xml" }],

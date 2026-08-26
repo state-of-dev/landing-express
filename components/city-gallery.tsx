@@ -14,8 +14,17 @@ function DemoCard({ demo, index }: { demo: (typeof demos)[number]; index: number
       className="relative h-[430px] w-full overflow-hidden md:h-[550px]"
     >
       <div
+        className="absolute inset-0 scale-110 bg-cover bg-center opacity-70 blur-xl"
+        style={{ backgroundImage: `url(${demo.image})` }}
+      />
+      <div
         className="absolute inset-0 bg-cover transition-transform duration-700 group-hover:scale-[1.03]"
-        style={{ backgroundImage: `url(${demo.image})`, backgroundPosition: demo.position }}
+        style={{
+          backgroundImage: `url(${demo.image})`,
+          backgroundPosition: demo.position,
+          backgroundSize: "contain",
+          backgroundRepeat: "no-repeat",
+        }}
       />
       <div className="absolute inset-0 bg-gradient-to-t from-black via-black/10 to-black/10" />
       <div className="absolute inset-x-0 bottom-0 flex items-end justify-between gap-5 p-6 md:p-8">
@@ -58,7 +67,7 @@ export function CityGallery() {
           <div
             key={demo.title}
             className={`relative w-full max-w-none overflow-hidden rounded-2xl border border-white/10 bg-black/30 ${
-              index === 0 ? "md:w-[65%]" : "md:w-[30%]"
+              index === 0 ? "md:w-[30%]" : "md:w-[65%]"
             }`}
           >
             <DemoCard demo={demo} index={index} />
