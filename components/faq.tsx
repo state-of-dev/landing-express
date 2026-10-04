@@ -5,11 +5,11 @@ const questions = [
   },
   {
     question: "¿Qué incluye una ronda de ajustes?",
-    answer: "Una lista consolidada de cambios menores sobre el diseño entregado. No incluye rediseño, nuevas secciones o funciones adicionales.",
+    answer: "Una lista consolidada de cambios menores sobre el diseño entregado. No incluye rediseño o nuevas secciones o funciones adicionales.",
   },
   {
     question: "¿Dominio y hosting están incluidos?",
-    answer: "Si. La publicación incluye el dominio y el servicio de hosting por 1 año. Ejemplo: https://www.tu-empresa.com", 
+    answer: "Si. La publicación incluye el dominio y el servicio de hosting por 1 año, sujeto a. Ejemplo: https://www.tu-empresa.com", 
   },
   {
     question: "¿Puedo solicitar más de siete secciones?",

@@ -33,7 +33,7 @@ export function About() {
       >
         <p className="mb-4 font-mono text-xs tracking-[0.3em] text-muted-foreground">PROCESO CLARO</p>
         <h2 className="max-w-6xl font-sans text-3xl font-light italic md:text-5xl">
-          Cinco días hábiles a partir de recibir el <span className="text-[#2563eb]">anticipo</span> y todos tus{" "}
+          Siete días hábiles a partir de recibir el <span className="text-[#2563eb]">anticipo</span> y todos tus{" "}
           <span className="text-[#2563eb]">materiales completos</span>.
         </h2>
         <p className="mt-7 max-w-3xl font-mono text-sm leading-7 text-muted-foreground">
